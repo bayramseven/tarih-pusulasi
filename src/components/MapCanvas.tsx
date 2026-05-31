@@ -9,10 +9,9 @@ import { GpsPosition } from '@/hooks/useGps'
 
 mapboxgl.accessToken = MAPBOX_TOKEN
 
-/* Gradient ID'yi tek değişkenden üret */
+/* ── Tip A yer imi markeri (altın mühür) ── */
 function createTipAMarkerEl(onClick: () => void): HTMLElement {
   const uid = `g${Math.random().toString(36).slice(2)}`
-
   const wrap = document.createElement('div')
   wrap.style.cssText = 'cursor:pointer;width:36px;height:48px;'
   wrap.className = 'tipa-marker'
@@ -28,7 +27,7 @@ function createTipAMarkerEl(onClick: () => void): HTMLElement {
         <stop offset="0%" stop-color="#E8B84B"/>
         <stop offset="100%" stop-color="#A07008"/>
       </linearGradient>
-      <filter id="s${uid}" x="-30%" y="-10%" width="160%" height="160%">
+      <filter id="s${uid}">
         <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="rgba(100,60,0,0.5)"/>
       </filter>
     </defs>
@@ -45,6 +44,7 @@ function createTipAMarkerEl(onClick: () => void): HTMLElement {
   return wrap
 }
 
+/* ── GPS mavi nokta ── */
 function createGpsDotEl(): HTMLElement {
   const el = document.createElement('div')
   el.style.cssText = `
@@ -62,14 +62,14 @@ interface Props {
   cities: CityFeature[]
   gpsPosition: GpsPosition | null
   onTipAClick: (location: TipALocation) => void
-  onCityClick: (city: CityFeature) => void
 }
 
-export default function MapCanvas({ tipALocations, cities, gpsPosition, onTipAClick, onCityClick }: Props) {
+export default function MapCanvas({ tipALocations, cities, gpsPosition, onTipAClick }: Props) {
   const containerRef = useRef<HTMLDivElement>(null)
   const mapRef = useRef<mapboxgl.Map | null>(null)
   const gpsMarkerRef = useRef<mapboxgl.Marker | null>(null)
-  const hasFlewToGpsRef = useRef(false)
+  const hasFlewRef = useRef(false)
+  const hoveredIdRef = useRef<number | string | null>(null)
 
   const initMap = useCallback(() => {
     if (!containerRef.current || mapRef.current) return
@@ -88,12 +88,12 @@ export default function MapCanvas({ tipALocations, cities, gpsPosition, onTipACl
     map.addControl(new mapboxgl.NavigationControl({ showCompass: true }), 'bottom-left')
 
     map.on('load', () => {
-      /* Tip B — şehir noktaları */
+
+      /* ══ TİP B — Şehir noktaları ══ */
       map.addSource('cities', {
         type: 'geojson',
         data: { type: 'FeatureCollection', features: cities as unknown as GeoJSON.Feature[] },
       })
-
       map.addLayer({
         id: 'cities-circle',
         type: 'circle',
@@ -106,7 +106,6 @@ export default function MapCanvas({ tipALocations, cities, gpsPosition, onTipACl
           'circle-opacity': 0.92,
         },
       })
-
       map.addLayer({
         id: 'cities-label',
         type: 'symbol',
@@ -126,15 +125,116 @@ export default function MapCanvas({ tipALocations, cities, gpsPosition, onTipACl
         },
       })
 
+      /* Şehir tıklaması → mini Mapbox popup */
       map.on('click', 'cities-circle', (e) => {
         if (!e.features?.[0]) return
-        const city = cities.find((c) => c.properties.id === e.features![0].properties?.id)
-        if (city) onCityClick(city)
+        const props = e.features[0].properties as { name: string; summary: string }
+        const coords = (e.features[0].geometry as GeoJSON.Point).coordinates as [number, number]
+
+        new mapboxgl.Popup({ closeButton: true, closeOnClick: true, className: 'city-popup', maxWidth: '280px' })
+          .setLngLat(coords)
+          .setHTML(`
+            <div class="city-popup-inner">
+              <h3>${props.name}</h3>
+              <p>${props.summary}</p>
+              <span class="city-popup-footer">Daha fazla yakında ✦</span>
+            </div>
+          `)
+          .addTo(map)
       })
       map.on('mouseenter', 'cities-circle', () => { map.getCanvas().style.cursor = 'pointer' })
       map.on('mouseleave', 'cities-circle', () => { map.getCanvas().style.cursor = '' })
 
-      /* Tip A — yer imi markerlar */
+      /* ══ TİP A — Poligon katmanları ══ */
+      const polygonFeatures: GeoJSON.Feature[] = tipALocations.map((loc, i) => ({
+        type: 'Feature' as const,
+        id: i,
+        properties: { id: loc.id, name: loc.name },
+        geometry: loc.polygon.geometry,
+      }))
+
+      map.addSource('tip-a-polygons', {
+        type: 'geojson',
+        data: { type: 'FeatureCollection', features: polygonFeatures },
+        generateId: true,
+      })
+
+      /* Dolgu — hover'da koyulaşır */
+      map.addLayer({
+        id: 'tip-a-fill',
+        type: 'fill',
+        source: 'tip-a-polygons',
+        paint: {
+          'fill-color': '#C8960C',
+          'fill-opacity': [
+            'case',
+            ['boolean', ['feature-state', 'hover'], false],
+            0.42,
+            0.18,
+          ],
+        },
+      })
+
+      /* Kenarlık */
+      map.addLayer({
+        id: 'tip-a-border',
+        type: 'line',
+        source: 'tip-a-polygons',
+        paint: {
+          'line-color': '#8B6914',
+          'line-width': 2,
+          'line-opacity': 0.75,
+          'line-dasharray': [3, 1.5],
+        },
+      })
+
+      /* İsim label — zoom 8+ */
+      map.addLayer({
+        id: 'tip-a-label',
+        type: 'symbol',
+        source: 'tip-a-polygons',
+        minzoom: 8,
+        layout: {
+          'text-field': ['get', 'name'],
+          'text-font': ['DIN Offc Pro Italic', 'Arial Unicode MS Regular'],
+          'text-size': 13,
+          'text-anchor': 'center',
+          'text-justify': 'center',
+        },
+        paint: {
+          'text-color': '#5C3400',
+          'text-halo-color': 'rgba(245,239,215,0.95)',
+          'text-halo-width': 2.5,
+        },
+      })
+
+      /* Hover efekti */
+      map.on('mousemove', 'tip-a-fill', (e) => {
+        if (!e.features?.length) return
+        map.getCanvas().style.cursor = 'pointer'
+        if (hoveredIdRef.current !== null) {
+          map.setFeatureState({ source: 'tip-a-polygons', id: hoveredIdRef.current }, { hover: false })
+        }
+        hoveredIdRef.current = e.features[0].id as number
+        map.setFeatureState({ source: 'tip-a-polygons', id: hoveredIdRef.current }, { hover: true })
+      })
+      map.on('mouseleave', 'tip-a-fill', () => {
+        if (hoveredIdRef.current !== null) {
+          map.setFeatureState({ source: 'tip-a-polygons', id: hoveredIdRef.current }, { hover: false })
+          hoveredIdRef.current = null
+        }
+        map.getCanvas().style.cursor = ''
+      })
+
+      /* Poligon tıklaması → BottomSheet */
+      map.on('click', 'tip-a-fill', (e) => {
+        if (!e.features?.[0]) return
+        const locId = e.features[0].properties?.id as string
+        const loc = tipALocations.find(l => l.id === locId)
+        if (loc) onTipAClick(loc)
+      })
+
+      /* ══ TİP A — Yer imi markerları (poligon üstünde) ══ */
       tipALocations.forEach((loc) => {
         const el = createTipAMarkerEl(() => onTipAClick(loc))
         new mapboxgl.Marker({ element: el, anchor: 'bottom' })
@@ -144,14 +244,14 @@ export default function MapCanvas({ tipALocations, cities, gpsPosition, onTipACl
     })
 
     mapRef.current = map
-  }, [tipALocations, cities, onTipAClick, onCityClick])
+  }, [tipALocations, cities, onTipAClick])
 
   useEffect(() => {
     initMap()
     return () => { mapRef.current?.remove(); mapRef.current = null }
   }, [initMap])
 
-  /* GPS nokta + harita uçuşu */
+  /* GPS nokta + flyTo */
   useEffect(() => {
     const map = mapRef.current
     if (!map) return
@@ -159,19 +259,17 @@ export default function MapCanvas({ tipALocations, cities, gpsPosition, onTipACl
     if (!gpsPosition) {
       gpsMarkerRef.current?.remove()
       gpsMarkerRef.current = null
-      hasFlewToGpsRef.current = false
+      hasFlewRef.current = false
       return
     }
 
     const lngLat: [number, number] = [gpsPosition.lng, gpsPosition.lat]
 
-    /* İlk konumda haritayı o noktaya uçur */
-    if (!hasFlewToGpsRef.current) {
-      hasFlewToGpsRef.current = true
+    if (!hasFlewRef.current) {
+      hasFlewRef.current = true
       map.flyTo({ center: lngLat, zoom: 13, duration: 2200, essential: true })
     }
 
-    /* Mavi nokta markerı oluştur/güncelle */
     if (!gpsMarkerRef.current) {
       gpsMarkerRef.current = new mapboxgl.Marker({ element: createGpsDotEl() })
         .setLngLat(lngLat)

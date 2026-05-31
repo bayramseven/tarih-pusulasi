@@ -17,7 +17,7 @@ const MapCanvas = dynamic(() => import('./MapCanvas'), {
       style={{ background: 'var(--parchment)' }}>
       <div className="text-center">
         <div className="compass-spin inline-block mb-4">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+          <svg width="52" height="52" viewBox="0 0 48 48" fill="none">
             <circle cx="24" cy="24" r="22" stroke="#C8960C" strokeWidth="1.5" strokeDasharray="4 6" />
             <circle cx="24" cy="24" r="6" fill="#C8960C" opacity="0.3" />
             <circle cx="24" cy="24" r="3" fill="#C8960C" />
@@ -45,34 +45,27 @@ export default function MapPage({ tipALocations, cities }: Props) {
   const geofencedLocation = useGeofencing(position, tipALocations)
 
   const [manualTipA, setManualTipA] = useState<TipALocation | null>(null)
-  const [manualCity, setManualCity] = useState<CityFeature | null>(null)
 
   const activeTipA = geofencedLocation ?? manualTipA
-  const activeCity = geofencedLocation ? null : manualCity
 
   const handleTipAClick = useCallback((loc: TipALocation) => {
-    setManualTipA(loc); setManualCity(null)
-  }, [])
-
-  const handleCityClick = useCallback((city: CityFeature) => {
-    setManualCity(city); setManualTipA(null)
+    setManualTipA(loc)
   }, [])
 
   const handleClose = useCallback(() => {
-    setManualTipA(null); setManualCity(null)
+    setManualTipA(null)
   }, [])
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
 
-      {/* ── Harita — sadece splash bittikten sonra mount edilir ── */}
+      {/* ── Harita ── */}
       {splashDone && (
         <MapCanvas
           tipALocations={tipALocations}
           cities={cities}
           gpsPosition={position}
           onTipAClick={handleTipAClick}
-          onCityClick={handleCityClick}
         />
       )}
 
@@ -143,7 +136,7 @@ export default function MapPage({ tipALocations, cities }: Props) {
             GPS alınamıyor — haritaya tıklayarak keşfedebilirsin
           </motion.div>
         )}
-        {status === 'watching' && position && !geofencedLocation && !manualTipA && !manualCity && splashDone && (
+        {status === 'watching' && position && !geofencedLocation && !manualTipA && splashDone && (
           <motion.div key="gps-no-match"
             className="absolute z-20 left-4 right-4 px-4 py-3 rounded-xl text-sm text-center"
             style={{ top: '108px', background: 'rgba(245,239,215,0.96)', color: 'var(--ink)',
@@ -152,8 +145,8 @@ export default function MapPage({ tipALocations, cities }: Props) {
             initial={{ opacity: 0, y: -8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }}
           >
             <span style={{ color: 'var(--gold)' }}>📍</span>{' '}
-            Konumunuz tespit edildi. Yakında tarihi alan yok —{' '}
-            <span style={{ color: 'var(--gold)', fontWeight: 600 }}>altın markerları</span> keşfedebilirsiniz.
+            Konumunuz tespit edildi — yakında tarihi alan yok.{' '}
+            <span style={{ color: 'var(--gold)', fontWeight: 600 }}>Altın markerları</span> keşfedebilirsiniz.
           </motion.div>
         )}
       </AnimatePresence>
@@ -163,10 +156,9 @@ export default function MapPage({ tipALocations, cities }: Props) {
         <GpsButton status={status} onStart={startWatching} onStop={stopWatching} />
       )}
 
-      {/* ── Bottom sheet ── */}
+      {/* ── Bottom sheet — sadece Tip A ── */}
       <BottomSheet
-        tipALocation={activeTipA}
-        cityLocation={activeCity}
+        location={activeTipA}
         onClose={handleClose}
       />
     </div>
