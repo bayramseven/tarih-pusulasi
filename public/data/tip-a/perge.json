@@ -3,28 +3,95 @@
   "name": "Perge",
   "period": "MÖ 1000 – MS 7. yy",
   "civilization": "Helenistik & Roma",
-  "coordinates": [30.8549, 36.9618],
+  "coordinates": [
+    30.8549,
+    36.9618
+  ],
   "polygon": {
     "type": "Feature",
     "geometry": {
       "type": "Polygon",
-      "coordinates": [[
-        [30.8350, 36.9750],
-        [30.8750, 36.9750],
-        [30.8750, 36.9470],
-        [30.8350, 36.9470],
-        [30.8350, 36.9750]
-      ]]
+      "coordinates": [
+        [
+          [
+            30.8418,
+            36.9718
+          ],
+          [
+            30.8485,
+            36.9752
+          ],
+          [
+            30.8565,
+            36.9762
+          ],
+          [
+            30.8645,
+            36.9745
+          ],
+          [
+            30.8705,
+            36.9698
+          ],
+          [
+            30.8725,
+            36.9635
+          ],
+          [
+            30.8705,
+            36.9572
+          ],
+          [
+            30.8645,
+            36.9528
+          ],
+          [
+            30.8562,
+            36.9512
+          ],
+          [
+            30.8482,
+            36.9528
+          ],
+          [
+            30.8422,
+            36.9575
+          ],
+          [
+            30.8402,
+            36.9642
+          ],
+          [
+            30.8418,
+            36.9718
+          ]
+        ]
+      ]
     }
   },
   "summary": "Antalya'nın 17 km doğusunda, ızgara planıyla düzenlenmiş mükemmel bir Helenistik-Roma şehri. Aziz Pavlus'un ilk vaaz verdiği Anadolu kenti.",
   "mainText": "Perge, Antalya'nın Aksu ilçesinde yer alan ve Helenistik dönemin en planlı şehir örneklerinden birini sunan antik kenttir. MÖ 1000 yıllarına uzanan bir geçmişi olmakla birlikte, en parlak dönemini Roma İmparatorluğu zamanında yaşamıştır.\n\nŞehir, modern ızgara planlamanın antik dünya uygulaması sayılan hipodamik düzende inşa edilmiştir: birbiriyle dik kesişen caddeler, düzgün adalar ve merkezi bir kolonnatlı cadde. Bu cadde boyunca akan su kanalları, şehre serin bir iklim sağlıyordu.\n\nAziz Pavlus, birinci misyoner seyahatinde MS 46 yılında Perge'ye gelmiş ve burada vaaz vermiştir. Bu, Hristiyanlığın Anadolu'ya yayılışındaki önemli bir başlangıç noktasıdır.\n\nPerge'nin heykelleri bugün Antalya Müzesi'nde sergilenmekte; özellikle Artemis heykelleri müzenin başyapıtları arasında yer almaktadır.",
   "timeline": [
-    { "year": "MÖ 1000", "event": "İlk yerleşimin başlaması" },
-    { "year": "MÖ 333", "event": "Büyük İskender'in Perge'yi fethetmesi" },
-    { "year": "MS 46", "event": "Aziz Pavlus'un Perge'de ilk vaazları" },
-    { "year": "MS 2. yy", "event": "Şehrin en parlak Roma dönemi" },
-    { "year": "MS 7. yy", "event": "Arap akınlarıyla birlikte terk edilmesi" }
+    {
+      "year": "MÖ 1000",
+      "event": "İlk yerleşimin başlaması"
+    },
+    {
+      "year": "MÖ 333",
+      "event": "Büyük İskender'in Perge'yi fethetmesi"
+    },
+    {
+      "year": "MS 46",
+      "event": "Aziz Pavlus'un Perge'de ilk vaazları"
+    },
+    {
+      "year": "MS 2. yy",
+      "event": "Şehrin en parlak Roma dönemi"
+    },
+    {
+      "year": "MS 7. yy",
+      "event": "Arap akınlarıyla birlikte terk edilmesi"
+    }
   ],
   "whyImportant": "Hristiyanlığın Anadolu'daki ilk sesinin yankılandığı cadde hâlâ ayakta.",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Perge_city_overview.jpg/1600px-Perge_city_overview.jpg",

@@ -3,30 +3,97 @@
   "name": "Aspendos",
   "period": "MÖ 5. yy – MS 13. yy",
   "civilization": "Antik Roma",
-  "coordinates": [31.1724, 36.9408],
+  "coordinates": [
+    31.1724,
+    36.9408
+  ],
   "polygon": {
     "type": "Feature",
     "geometry": {
       "type": "Polygon",
-      "coordinates": [[
-        [31.1520, 36.9520],
-        [31.1950, 36.9520],
-        [31.1950, 36.9280],
-        [31.1520, 36.9280],
-        [31.1520, 36.9520]
-      ]]
+      "coordinates": [
+        [
+          [
+            31.1618,
+            36.9498
+          ],
+          [
+            31.1668,
+            36.9528
+          ],
+          [
+            31.173,
+            36.9538
+          ],
+          [
+            31.1795,
+            36.9525
+          ],
+          [
+            31.1842,
+            36.9488
+          ],
+          [
+            31.1858,
+            36.9438
+          ],
+          [
+            31.1842,
+            36.9385
+          ],
+          [
+            31.1795,
+            36.9352
+          ],
+          [
+            31.1728,
+            36.9342
+          ],
+          [
+            31.1665,
+            36.9355
+          ],
+          [
+            31.1618,
+            36.9392
+          ],
+          [
+            31.1602,
+            36.9445
+          ],
+          [
+            31.1618,
+            36.9498
+          ]
+        ]
+      ]
     }
   },
   "summary": "Dünyanın en iyi korunmuş Roma tiyatrosu. MS 2. yüzyılda 15.000 seyirci kapasitesiyle inşa edildi, 1800 yıl sonra hâlâ opera sahnesi olarak kullanılıyor.",
-  "mainText": "Aspendos Tiyatrosu, Antalya'nın Serik ilçesinde yer alan ve günümüzde hâlâ kullanılabilen dünyanın en iyi korunmuş antik Roma tiyatrosudur.\n\nMS 2. yüzyılda İmparator Marcus Aurelius döneminde Zenon adlı yerel bir mimar tarafından inşa edilen tiyatro, 15.000 seyirci kapasitesine sahiptir. Roma tiyatro mimarisinin mükemmel örneği olan yapının sahne binası (scaenae frons) iki katlı ve 28 metre yüksekliğindedir.\n\nTiyatronun bu denli korunmuş olmasında Selçuklu döneminin katkısı büyüktür: yapı, 13. yüzyılda Selçuklu sarayı olarak kullanılmış; Atatürk'ün 1930'daki ziyaretinin ardından ise resmi olarak restore edilmiştir.\n\nHer yaz düzenlenen Aspendos Opera ve Bale Festivali, antik dünyayla bugünün sanatını aynı sahnede buluşturmaktadır. Seyirciler, Roma İmparatorluğu döneminde oturulan aynı mermer sıralara oturmaktadır.",
+  "mainText": "Aspendos Tiyatrosu, Antalya'nın Serik ilçesinde yer alan ve günümüzde hâlâ aktif sahne olarak kullanılan dünyanın en iyi korunmuş antik Roma tiyatrosudur.\n\nMS 2. yüzyılda İmparator Marcus Aurelius döneminde Zenon adlı yerel bir mimar tarafından inşa edilen tiyatro, 15.000 seyirci kapasitesine sahiptir. Roma tiyatro mimarisinin mükemmel örneği olan yapının sahne binası (scaenae frons) iki katlı ve 28 metre yüksekliğindedir.\n\nAspendos'u diğer antik tiyatrolardan ayıran en önemli özelliklerden biri akustik mühendisliğidir. Tiyatronun akustiği, aradan geçen 1800 yılına rağmen günümüzde de mükemmelliğini korumaktadır: en üst sırada oturan bir izleyici, sahneye konuşan birini mikrofonsuz açıkça duyabilmektedir. Romalı mimarların bu akustik mucizeyi nasıl başardığı bugün hâlâ mühendisleri hayrete düşürmektedir.\n\nTiyatronun bu denli korunmuş olmasında Selçuklu döneminin katkısı büyüktür: yapı, 13. yüzyılda Selçuklu sarayı olarak kullanılmış; Atatürk'ün 1930'daki ziyaretinin ardından ise resmi olarak restore edilmiştir.\n\nHer yaz düzenlenen Aspendos Opera ve Bale Festivali, antik dünyayla bugünün sanatını aynı sahnede buluşturmaktadır. Aynı akustik, aynı mermer basamaklar — 1800 yıl önce alkışlanan sahne bugün hâlâ alkışlanmaktadır.",
   "timeline": [
-    { "year": "MÖ 5. yy", "event": "Aspendos şehrinin kurulması" },
-    { "year": "MS 161–180", "event": "Marcus Aurelius döneminde tiyatronun inşası" },
-    { "year": "MS 13. yy", "event": "Selçuklular tarafından saray olarak kullanılması" },
-    { "year": "1930", "event": "Atatürk'ün ziyareti ve restorasyon kararı" },
-    { "year": "1994", "event": "Aspendos Opera ve Bale Festivali'nin başlaması" }
+    {
+      "year": "MÖ 5. yy",
+      "event": "Aspendos şehrinin kurulması"
+    },
+    {
+      "year": "MS 161–180",
+      "event": "Marcus Aurelius döneminde tiyatronun inşası"
+    },
+    {
+      "year": "MS 13. yy",
+      "event": "Selçuklular tarafından saray olarak kullanılması"
+    },
+    {
+      "year": "1930",
+      "event": "Atatürk'ün ziyareti ve restorasyon kararı"
+    },
+    {
+      "year": "1994",
+      "event": "Aspendos Opera ve Bale Festivali'nin başlaması"
+    }
   ],
-  "whyImportant": "1800 yıllık bir tiyatroda bugün hâlâ perde açılıyor — dünyanın başka hiçbir yerinde bu yok.",
+  "whyImportant": "1800 yıllık akustiği hâlâ mükemmel çalışan, günümüzde opera sahnesi olarak kullanılan tek antik Roma tiyatrosu.",
   "imageUrl": "",
   "readMoreUrl": "https://www.kulturportali.gov.tr/turkiye/antalya/gezilecekyer/aspendos-antik-kenti"
 }

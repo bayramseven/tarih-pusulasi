@@ -3,30 +3,97 @@
   "name": "Afrodisias",
   "period": "MÖ 5. yy – MS 7. yy",
   "civilization": "Afrodit Kültü & Roma",
-  "coordinates": [28.7228, 37.7086],
+  "coordinates": [
+    28.7228,
+    37.7086
+  ],
   "polygon": {
     "type": "Feature",
     "geometry": {
       "type": "Polygon",
-      "coordinates": [[
-        [28.7000, 37.7220],
-        [28.7480, 37.7220],
-        [28.7480, 37.6940],
-        [28.7000, 37.6940],
-        [28.7000, 37.7220]
-      ]]
+      "coordinates": [
+        [
+          [
+            28.7072,
+            37.7168
+          ],
+          [
+            28.7145,
+            37.7208
+          ],
+          [
+            28.7235,
+            37.7222
+          ],
+          [
+            28.7325,
+            37.7208
+          ],
+          [
+            28.7392,
+            37.7162
+          ],
+          [
+            28.7418,
+            37.7098
+          ],
+          [
+            28.7398,
+            37.7032
+          ],
+          [
+            28.7335,
+            37.699
+          ],
+          [
+            28.7242,
+            37.6975
+          ],
+          [
+            28.7152,
+            37.6992
+          ],
+          [
+            28.7082,
+            37.7038
+          ],
+          [
+            28.7058,
+            37.7108
+          ],
+          [
+            28.7072,
+            37.7168
+          ]
+        ]
+      ]
     }
   },
   "summary": "Aşk tanrıçası Afrodit'e adanmış şehir. Roma dönemi heykelciliğinin başkenti, öyle ki imparatorlar buradan heykel sipariş ederdi.",
-  "mainText": "Afrodisias, Aydın iline bağlı Karacasu ilçesinde yer alan ve aşk tanrıçası Afrodit'in adını taşıyan antik kenttir. MÖ 5. yüzyıldan MS 7. yüzyıla kadar iskân edilmiş olan şehir, Afrodit Tapınağı etrafında gelişmiştir.\n\nAfrodisias, Roma İmparatorluğu döneminde dünyaca ünlü bir heykelcilik merkezi haline gelmiştir. Şehirde bulunan yüksek kaliteli beyaz ve mavi-gri mermer, ustalar için mükemmel bir hammadde sağlıyordu. \"Afrodisias Okulu\" olarak bilinen bu heykelcilik geleneği, Roma İmparatorluğu'nun dört bir yanına eserler ihraç ediyordu; imparatorlar bile buradan özel sipariş veriyordu.\n\nStadion, 30.000 seyirci kapasitesiyle antik dünyanın en büyük ve en iyi korunmuş stadyonlarından biridir. Sebasteion'un kabartmaları ise Augustus döneminin imgelemini en canlı biçimde aktaran Roma dönemi sanat eserleri arasında gösterilmektedir.\n\n2017'de UNESCO Dünya Mirası listesine alınan Afrodisias, müzesiyle birlikte zengin bir ziyaret deneyimi sunmaktadır.",
+  "mainText": "Afrodisias, Aydın iline bağlı Karacasu ilçesinde yer alan ve aşk tanrıçası Afrodit'in adını taşıyan antik kenttir. MÖ 5. yüzyıldan MS 7. yüzyıla kadar iskân edilmiş olan şehir, iki alanda dünya rekoru kırmaktadır.\n\nBirincisi heykelcilik: Afrodisias, Roma İmparatorluğu döneminde dünyaca ünlü bir heykelcilik merkezi haline gelmiştir. Şehirde bulunan yüksek kaliteli beyaz ve mavi-gri mermer, ustalar için ideal hammadde sağlıyordu. \"Afrodisias Okulu\" olarak bilinen bu atölye geleneği, Roma İmparatorluğu'nun dört bir yanına eserler ihraç ediyordu; imparatorlar bile buradan özel sipariş veriyordu.\n\nİkincisi stadyum: Afrodisias Stadyumu, 30.000 seyirci kapasitesiyle antik dünyanın en büyük ve en iyi korunmuş stadyumlarından biridir — bu, bugünkü pek çok modern stadyumla kıyaslanabilir bir kapasitedir. Stadyumun mükemmel oval formu ve oturma basamakları neredeyse tamamen ayaktadır.\n\nSebasteion'un kabartmaları ise Augustus döneminin imgelemini en canlı biçimde aktaran Roma dönemi sanat eserleri arasında gösterilmektedir. Tapınak kabartmaları, Romalı mitoloji ve siyasi propagandanın nasıl iç içe geçtiğini gözler önüne sermektedir.\n\n2017'de UNESCO Dünya Mirası listesine alınan Afrodisias, müzesiyle birlikte zengin bir ziyaret deneyimi sunmaktadır.",
   "timeline": [
-    { "year": "MÖ 5. yy", "event": "Afrodit tapınağı etrafında şehrin kuruluşu" },
-    { "year": "MÖ 1. yy", "event": "Julius Caesar'ın şehre verdiği ayrıcalıklar" },
-    { "year": "MS 1–2. yy", "event": "Afrodisias heykel okulunun zirve dönemi" },
-    { "year": "MS 5. yy", "event": "Afrodit Tapınağı'nın kiliseye dönüştürülmesi" },
-    { "year": "2017", "event": "UNESCO Dünya Mirası listesine alınması" }
+    {
+      "year": "MÖ 5. yy",
+      "event": "Afrodit tapınağı etrafında şehrin kuruluşu"
+    },
+    {
+      "year": "MÖ 1. yy",
+      "event": "Julius Caesar'ın şehre verdiği ayrıcalıklar"
+    },
+    {
+      "year": "MS 1–2. yy",
+      "event": "Afrodisias heykel okulunun zirve dönemi"
+    },
+    {
+      "year": "MS 5. yy",
+      "event": "Afrodit Tapınağı'nın kiliseye dönüştürülmesi"
+    },
+    {
+      "year": "2017",
+      "event": "UNESCO Dünya Mirası listesine alınması"
+    }
   ],
-  "whyImportant": "Roma imparatorları sanat sipariş için buraya bakıyordu — bu şehir antik dünyanın sanat başkentiydi.",
+  "whyImportant": "Roma imparatorlarının heykel siparişi için kapısını çaldığı şehir; 30.000 kişilik stadyumuyla antik dünyanın rekor arenası.",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/The_Temple_of_Aphrodite%2C_built_in_the_Ionic_order_in_stages_during_the_Roman_period_%28from_1st_century_BC_to_2nd_century_AD%29_and_later_converted_into_a_Christian_basilica%2C_Aphrodisias%2C_Caria%2C_Turkey_%2820300922019%29.jpg/1600px-thumbnail.jpg",
   "readMoreUrl": "https://www.kulturportali.gov.tr/turkiye/aydin/gezilecekyer/afrodisias-antik-kenti"
 }

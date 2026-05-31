@@ -3,29 +3,103 @@
   "name": "Efes",
   "period": "MÖ 10. yy – MS 7. yy",
   "civilization": "Antik Roma & Helenistik",
-  "coordinates": [27.3416, 37.9396],
+  "coordinates": [
+    27.3416,
+    37.9396
+  ],
   "polygon": {
     "type": "Feature",
     "geometry": {
       "type": "Polygon",
-      "coordinates": [[
-        [27.3200, 37.9500],
-        [27.3650, 37.9500],
-        [27.3650, 37.9280],
-        [27.3200, 37.9280],
-        [27.3200, 37.9500]
-      ]]
+      "coordinates": [
+        [
+          [
+            27.3225,
+            37.9495
+          ],
+          [
+            27.33,
+            37.953
+          ],
+          [
+            27.341,
+            37.954
+          ],
+          [
+            27.351,
+            37.952
+          ],
+          [
+            27.36,
+            37.948
+          ],
+          [
+            27.365,
+            37.942
+          ],
+          [
+            27.3645,
+            37.936
+          ],
+          [
+            27.36,
+            37.93
+          ],
+          [
+            27.352,
+            37.9268
+          ],
+          [
+            27.341,
+            37.9258
+          ],
+          [
+            27.33,
+            37.927
+          ],
+          [
+            27.322,
+            37.9315
+          ],
+          [
+            27.32,
+            37.939
+          ],
+          [
+            27.3225,
+            37.9495
+          ]
+        ]
+      ]
     }
   },
   "summary": "Antik dünyanın en büyük limanlarından biri, Artemis Tapınağı'na ev sahipliği yapan şehir. Roma döneminde 200.000 kişilik nüfusuyla zamanının New York'uydu.",
   "mainText": "Efes, MÖ 10. yüzyıldan itibaren yerleşilen ve antik dünyada önemli bir liman şehri olarak gelişen bir kenttir. Bugünkü İzmir iline bağlı Selçuk ilçesinin yakınında yer alır.\n\nDünyanın Yedi Harikası'ndan biri olan Artemis Tapınağı, bu şehirde inşa edilmiştir. Tapınak, Parthenon'un dört katı büyüklüğündeydi ve yalnızca tek sütunu günümüze ulaşabilmiştir. Efes, Roma döneminde Asya eyaletinin başkenti olarak yaklaşık 200.000 kişilik nüfusuyla antik dünyanın en kalabalık şehirlerinden biriydi.\n\nBugün ayakta olan Celsus Kütüphanesi, MÖ 117'de inşa edilmiş ve 12.000 kitap tomarı barındırmıştır. Büyük Tiyatro ise 25.000 seyirci kapasitesiyle Türkiye'nin en büyük açık hava tiyatrosudur. İncil'de adı geçen bu şehirde Hristiyan ilk toplulukları da varlık göstermiştir.\n\nEfes 2015 yılında UNESCO Dünya Mirası listesine alınmıştır.",
   "timeline": [
-    { "year": "MÖ 10. yy", "event": "İyonyalı göçmenler tarafından kurulması" },
-    { "year": "MÖ 560", "event": "Artemis Tapınağı'nın inşasına başlanması" },
-    { "year": "MÖ 356", "event": "Tapınağın yakılması ve yeniden inşası" },
-    { "year": "MÖ 133", "event": "Roma eyaleti Asya'nın başkenti olması" },
-    { "year": "MS 53–57", "event": "Aziz Pavlus'un Efes'te ikamet etmesi" },
-    { "year": "MS 262", "event": "Gotların saldırısı ve şehrin büyük tahribatı" }
+    {
+      "year": "MÖ 10. yy",
+      "event": "İyonyalı göçmenler tarafından kurulması"
+    },
+    {
+      "year": "MÖ 560",
+      "event": "Artemis Tapınağı'nın inşasına başlanması"
+    },
+    {
+      "year": "MÖ 356",
+      "event": "Tapınağın yakılması ve yeniden inşası"
+    },
+    {
+      "year": "MÖ 133",
+      "event": "Roma eyaleti Asya'nın başkenti olması"
+    },
+    {
+      "year": "MS 53–57",
+      "event": "Aziz Pavlus'un Efes'te ikamet etmesi"
+    },
+    {
+      "year": "MS 262",
+      "event": "Gotların saldırısı ve şehrin büyük tahribatı"
+    }
   ],
   "whyImportant": "Antik dünyada bir kitabevi, kütüphane ve 25.000 kişilik tiyatrosu olan bu şehir, uygarlığın zirvesini temsil eder.",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Ephesus_Celsus_Library_Fa%C3%A7ade.jpg/1600px-Ephesus_Celsus_Library_Fa%C3%A7ade.jpg",

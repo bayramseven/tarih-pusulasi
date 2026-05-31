@@ -3,29 +3,103 @@
   "name": "Çatalhöyük",
   "period": "MÖ 7500 – MÖ 5700",
   "civilization": "Neolitik Çağ",
-  "coordinates": [32.8271, 37.6670],
+  "coordinates": [
+    32.8271,
+    37.667
+  ],
   "polygon": {
     "type": "Feature",
     "geometry": {
       "type": "Polygon",
-      "coordinates": [[
-        [32.8100, 37.6800],
-        [32.8450, 37.6800],
-        [32.8450, 37.6540],
-        [32.8100, 37.6540],
-        [32.8100, 37.6800]
-      ]]
+      "coordinates": [
+        [
+          [
+            32.8188,
+            37.674
+          ],
+          [
+            32.824,
+            37.6775
+          ],
+          [
+            32.83,
+            37.6785
+          ],
+          [
+            32.836,
+            37.677
+          ],
+          [
+            32.84,
+            37.673
+          ],
+          [
+            32.8405,
+            37.6682
+          ],
+          [
+            32.8375,
+            37.6645
+          ],
+          [
+            32.832,
+            37.6625
+          ],
+          [
+            32.8258,
+            37.6625
+          ],
+          [
+            32.82,
+            37.665
+          ],
+          [
+            32.8165,
+            37.6692
+          ],
+          [
+            32.8168,
+            37.6735
+          ],
+          [
+            32.8188,
+            37.674
+          ]
+        ]
+      ]
     }
   },
   "summary": "9500 yıl önce 8000 kişinin kapısız evlerde çatılardan girip çıkarak yaşadığı şehir. Dünyanın en erken kentsel yerleşimlerinden biri, Konya ovasında.",
-  "mainText": "Çatalhöyük, Konya Ovası'nda MÖ 7500 ile 5700 yılları arasında kesintisiz iskân edilmiş Neolitik bir proto-şehirdir. 1961'de James Mellaart tarafından keşfedilen bu alan, kentsel yaşamın en erken örneklerinden birini sunmaktadır.\n\nŞehrin en çarpıcı özelliği mimari düzenlemesidir: evlerin kapısı yoktu. Sakinler çatıdaki deliklerden merdiveni aşağı sarkıtarak evlerine giriyor çıkıyordu. Evler o kadar sıkışık inşa edilmişti ki sokaklar yoktu; çatılar ortak yürüyüş alanı olarak kullanılıyordu.\n\nÖlen aile üyeleri evin tabanına gömülüyordu. Duvarlarda yaban öküzü (aurochs) kafatasları ve boğa figürleri bulunmuştur; bunlar Anadolu'daki boğa kültünün en erken kanıtlarıdır. Ayrıca dünyanın bilinen en eski kent haritası da Çatalhöyük'te bulunmuştur.\n\n2012'de UNESCO Dünya Mirası listesine alınan alan, yerleşik yaşama geçişin nasıl gerçekleştiğini anlamamız açısından eşsiz bir kaynak olmaya devam etmektedir.",
+  "mainText": "Çatalhöyük, Konya Ovası'nda MÖ 7500 ile 5700 yılları arasında kesintisiz iskân edilmiş Neolitik bir proto-şehirdir. İngiliz arkeolog James Mellaart tarafından 1961'de keşfedilen bu alan, kentsel yaşamın ve örgütlü toplumun en erken örneklerinden birini sunmaktadır.\n\nŞehrin en çarpıcı özelliği mimari düzenlemesidir: evlerin kapısı yoktu. Sakinler çatıdaki deliklerden merdiveni aşağı sarkıtarak evlerine giriyor çıkıyordu. Evler o kadar sıkışık inşa edilmişti ki sokaklar yoktu; çatılar ortak yürüyüş alanı olarak kullanılıyordu.\n\nÖlen aile üyeleri evin tabanına gömülüyordu. Duvarlarda ise Neolitik sanatın en etkileyici örnekleri bulunmuştur: yaban öküzü (aurochs) avını betimleyen canlı duvar resimleri, geometrik motifler ve boğa kafatası kabartmaları. Bu duvar resimleri, insanlığın bilinen en eski anlatı sanatı örnekleri arasındadır.\n\nToplum yapısı da dönemine göre son derece dikkat çekicidir. Arkeolojik bulgular Çatalhöyük'ün eşitlikçi bir sosyal yapıya sahip olduğunu göstermektedir: mezarlardaki kemik analizleri kadın ve erkeklerin benzer beslenme düzeyine ve statüye sahip olduğuna işaret etmektedir; merkezi bir otorite ya da saray kalıntısı bulunamamıştır.\n\nAyrıca dünyanın bilinen en eski kent haritası da Çatalhöyük'te bulunmuştur. 2012'de UNESCO Dünya Mirası listesine alınan alan, yerleşik yaşama ve eşitlikçi topluma geçişin nasıl gerçekleştiğini anlamamız açısından tartışmasız en önemli kazı alanlarından biridir.",
   "timeline": [
-    { "year": "MÖ 7500", "event": "İlk yerleşimin başlaması" },
-    { "year": "MÖ 7000", "event": "Nüfusun 8000'e ulaşması, doğu höyüğünün yoğun iskânı" },
-    { "year": "MÖ 6000", "event": "Batı höyüğüne geçiş" },
-    { "year": "MÖ 5700", "event": "Yerleşimin terk edilmesi" },
-    { "year": "1961", "event": "James Mellaart'ın keşfi" },
-    { "year": "2012", "event": "UNESCO Dünya Mirası listesine alınması" }
+    {
+      "year": "MÖ 7500",
+      "event": "İlk yerleşimin başlaması, avlanma ve toplayıcılıktan tarıma geçiş"
+    },
+    {
+      "year": "MÖ 7000",
+      "event": "Nüfusun 8000'e ulaşması; doğu höyüğünün yoğun iskânı"
+    },
+    {
+      "year": "MÖ 6500",
+      "event": "Duvar resimlerinin ve boğa kabartmalarının yapılması, eşitlikçi toplum yapısının zirvesi"
+    },
+    {
+      "year": "MÖ 6000",
+      "event": "Batı höyüğüne geçiş, değişen sosyal örüntüler"
+    },
+    {
+      "year": "MÖ 5700",
+      "event": "Yerleşimin terk edilmesi"
+    },
+    {
+      "year": "1961",
+      "event": "James Mellaart'ın keşfi — arkeoloji dünyasını sarsan bulgu"
+    },
+    {
+      "year": "2012",
+      "event": "UNESCO Dünya Mirası listesine alınması"
+    }
   ],
   "whyImportant": "Kapısız evlerde yaşayan 8000 kişilik bu topluluk, şehir fikrini icat eden insanlardı.",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/%C3%87atalh%C3%B6y%C3%BCk%2C_7400_BC%2C_Konya%2C_Turkey_-_UNESCO_World_Heritage_Site%2C_08.jpg/1600px-%C3%87atalh%C3%B6y%C3%BCk%2C_7400_BC%2C_Konya%2C_Turkey_-_UNESCO_World_Heritage_Site%2C_08.jpg",

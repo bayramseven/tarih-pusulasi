@@ -3,29 +3,111 @@
   "name": "İstanbul Tarihi Yarımada",
   "period": "MÖ 657 – MS 1923",
   "civilization": "Bizans & Osmanlı İmparatorluğu",
-  "coordinates": [28.9784, 41.0082],
+  "coordinates": [
+    28.9784,
+    41.0082
+  ],
   "polygon": {
     "type": "Feature",
     "geometry": {
       "type": "Polygon",
-      "coordinates": [[
-        [28.9200, 41.0250],
-        [29.0100, 41.0250],
-        [29.0100, 40.9850],
-        [28.9200, 40.9850],
-        [28.9200, 41.0250]
-      ]]
+      "coordinates": [
+        [
+          [
+            28.9268,
+            41.0258
+          ],
+          [
+            28.935,
+            41.0318
+          ],
+          [
+            28.948,
+            41.033
+          ],
+          [
+            28.958,
+            41.0305
+          ],
+          [
+            28.966,
+            41.0278
+          ],
+          [
+            28.975,
+            41.024
+          ],
+          [
+            28.984,
+            41.0195
+          ],
+          [
+            28.9845,
+            41.0145
+          ],
+          [
+            28.984,
+            41.0082
+          ],
+          [
+            28.98,
+            41.002
+          ],
+          [
+            28.972,
+            40.999
+          ],
+          [
+            28.958,
+            40.9978
+          ],
+          [
+            28.942,
+            40.9975
+          ],
+          [
+            28.93,
+            40.9982
+          ],
+          [
+            28.9268,
+            41.001
+          ],
+          [
+            28.9268,
+            41.0258
+          ]
+        ]
+      ]
     }
   },
   "summary": "İki imparatorluğun başkenti, doğu ile batının kesiştiği bu yarımada 2600 yıllık kesintisiz tarih barındırır. Bizans mozaikleri Osmanlı minareleriyle yan yana yükselir.",
   "mainText": "İstanbul Tarihi Yarımada, insanlık tarihinin en katmanlı yerleşim alanlarından biridir. MÖ 657'de Megaralı kolonistlerin kurduğu Byzantion'dan Roma İmparatorluğu'nun doğu başkenti Konstantinopolis'e, oradan Osmanlı'nın fetih yurdu İstanbul'a uzanan bu dönüşüm, taşların içine işlemiştir.\n\nHipodrom meydanında dikili duran Mısır Dikilitaşı MÖ 1500'den bu yana ayaktadır. Yerebatan Sarnıcı'nın devasa sütunları MS 532'de Bizans işçilerinin elinden çıkmıştır. Ayasofya, kubbesinin mühendislik mucizesiyle 1500 yıldır tüm mimarları hayrete düşürmektedir.\n\nOsmanlı döneminde Topkapı Sarayı bu yarımadanın tepesine kurulmuş, dünyanın en büyük imparatorluğu buradan yönetilmiştir. Kapalıçarşı'nın labirent sokakları, İpek Yolu'nun son durağı olarak yüzyıllar boyunca tüccarları bir araya getirmiştir.\n\nBugün UNESCO Dünya Mirası listesindeki bu alan, her metrekaresinde üst üste binmiş kültürlerin izlerini taşımaktadır.",
   "timeline": [
-    { "year": "MÖ 657", "event": "Byzantion'un Megaralı kolonistler tarafından kurulması" },
-    { "year": "MS 330", "event": "Konstantinopolis'in Roma İmparatorluğu'nun yeni başkenti ilan edilmesi" },
-    { "year": "MS 532", "event": "Yerebatan Sarnıcı'nın inşası ve Nika ayaklanması" },
-    { "year": "MS 537", "event": "Ayasofya'nın tamamlanması" },
-    { "year": "MS 1453", "event": "Fatih Sultan Mehmed'in fethi, Bizans'ın sona erişi" },
-    { "year": "MS 1478", "event": "Topkapı Sarayı'nın inşasının tamamlanması" }
+    {
+      "year": "MÖ 657",
+      "event": "Byzantion'un Megaralı kolonistler tarafından kurulması"
+    },
+    {
+      "year": "MS 330",
+      "event": "Konstantinopolis'in Roma İmparatorluğu'nun yeni başkenti ilan edilmesi"
+    },
+    {
+      "year": "MS 532",
+      "event": "Yerebatan Sarnıcı'nın inşası ve Nika ayaklanması"
+    },
+    {
+      "year": "MS 537",
+      "event": "Ayasofya'nın tamamlanması"
+    },
+    {
+      "year": "MS 1453",
+      "event": "Fatih Sultan Mehmed'in fethi, Bizans'ın sona erişi"
+    },
+    {
+      "year": "MS 1478",
+      "event": "Topkapı Sarayı'nın inşasının tamamlanması"
+    }
   ],
   "whyImportant": "Tek bir alanda iki dünya imparatorluğunun başkentini görebileceğiniz yeryüzündeki tek nokta.",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Hagia_Sophia_%28228968325%29.jpeg/1600px-Hagia_Sophia_%28228968325%29.jpeg",

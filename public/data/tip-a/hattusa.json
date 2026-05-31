@@ -3,28 +3,95 @@
   "name": "Hattuşa",
   "period": "MÖ 1700 – MÖ 1180",
   "civilization": "Hitit İmparatorluğu",
-  "coordinates": [34.6155, 40.0195],
+  "coordinates": [
+    34.6155,
+    40.0195
+  ],
   "polygon": {
     "type": "Feature",
     "geometry": {
       "type": "Polygon",
-      "coordinates": [[
-        [34.5950, 40.0350],
-        [34.6400, 40.0350],
-        [34.6400, 40.0050],
-        [34.5950, 40.0050],
-        [34.5950, 40.0350]
-      ]]
+      "coordinates": [
+        [
+          [
+            34.598,
+            40.028
+          ],
+          [
+            34.608,
+            40.033
+          ],
+          [
+            34.618,
+            40.032
+          ],
+          [
+            34.628,
+            40.029
+          ],
+          [
+            34.637,
+            40.024
+          ],
+          [
+            34.64,
+            40.017
+          ],
+          [
+            34.638,
+            40.01
+          ],
+          [
+            34.63,
+            40.006
+          ],
+          [
+            34.618,
+            40.0045
+          ],
+          [
+            34.607,
+            40.006
+          ],
+          [
+            34.599,
+            40.0105
+          ],
+          [
+            34.596,
+            40.0175
+          ],
+          [
+            34.598,
+            40.028
+          ]
+        ]
+      ]
     }
   },
   "summary": "Anadolu'nun ilk süper gücünün başkenti. Mısır Firavunu ile tarihin ilk barış antlaşmasını imzalayan Hititler burada hüküm sürdü. 6 kilometrelik surları hâlâ ayakta.",
   "mainText": "Hattuşa, yaklaşık 3700 yıl önce Anadolu'nun kalbinde hüküm süren Hitit İmparatorluğu'nun başkentiydi. Bugünkü Çorum iline bağlı Boğazköy kasabasının yakınında bulunan bu alan, 1986'dan bu yana UNESCO Dünya Mirası listesindedir.\n\nHitit medeniyeti, MÖ 2. binyılın en güçlü devletlerinden birini kurmuş; Mısır, Babil ve Mitanni ile siyasi ilişkiler yürütmüştür. MÖ 1274'te Mısır Firavunu II. Ramses ile yapılan Kadeş Savaşı'nın ardından imzalanan barış antlaşması, tarihin bilinen en eski yazılı uluslararası anlaşmasıdır. Bu antlaşmanın kil tablet kopyası bugün BM Genel Merkezi'nde sergilenmektedir.\n\nHattuşa'da yapılan kazılarda 30.000'den fazla kil tablet bulunmuştur. Bu tabletler sayesinde Hitit dili, hukuku, dini ve diplomatik yazışmaları hakkında kapsamlı bilgi edinilmiştir. Büyük Tapınak, Sfenksli Kapı ve Aslan Kapısı günümüzde ziyaret edilebilmektedir.\n\nŞehrin altı kilometrelik surları, MÖ 13. yüzyıldaki ihtişamını bugün hâlâ yansıtmaktadır.",
   "timeline": [
-    { "year": "MÖ 1700", "event": "Hattuşa'nın Hitit başkenti ilan edilmesi" },
-    { "year": "MÖ 1650", "event": "I. Hattuşili döneminde imparatorluğun genişlemesi" },
-    { "year": "MÖ 1274", "event": "Kadeş Savaşı — Mısır ile tarihin ilk savaş alanı karşılaşması" },
-    { "year": "MÖ 1259", "event": "Kadeş Antlaşması — tarihin ilk yazılı barış belgesi" },
-    { "year": "MÖ 1180", "event": "Deniz Kavimleri'nin saldırıları ve Hitit İmparatorluğu'nun çöküşü" }
+    {
+      "year": "MÖ 1700",
+      "event": "Hattuşa'nın Hitit başkenti ilan edilmesi"
+    },
+    {
+      "year": "MÖ 1650",
+      "event": "I. Hattuşili döneminde imparatorluğun genişlemesi"
+    },
+    {
+      "year": "MÖ 1274",
+      "event": "Kadeş Savaşı — Mısır ile tarihin ilk savaş alanı karşılaşması"
+    },
+    {
+      "year": "MÖ 1259",
+      "event": "Kadeş Antlaşması — tarihin ilk yazılı barış belgesi"
+    },
+    {
+      "year": "MÖ 1180",
+      "event": "Deniz Kavimleri'nin saldırıları ve Hitit İmparatorluğu'nun çöküşü"
+    }
   ],
   "whyImportant": "Türkiye'nin topraklarında BM binasında asılı olan tek tarihi belgeyi doğuran medeniyet burada yaşadı.",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Lion_Gate%2C_Hattusa_13_%28cropped%29.jpg/1600px-Lion_Gate%2C_Hattusa_13_%28cropped%29.jpg",
