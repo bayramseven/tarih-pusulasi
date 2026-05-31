@@ -112,7 +112,17 @@ export default function LocationCard({ location }: Props) {
       {/* ══ İÇERİK ══ */}
       <div className="px-5 pt-6 pb-10 space-y-6">
 
-        {/* Pull-quote */}
+        {/* Kısa özet — büyük puntolu giriş */}
+        <motion.div variants={fadeUp}>
+          <p className="font-semibold leading-[1.7]"
+            style={{ fontSize: '16px', color: 'var(--ink)', fontFamily: "'Source Serif 4', serif" }}>
+            {location.summary}
+          </p>
+        </motion.div>
+
+        <motion.div variants={fadeUp} className="ornament-divider">✦</motion.div>
+
+        {/* Pull-quote — Neden Önemli */}
         <motion.div variants={fadeUp} className="pull-quote">
           <p className="text-sm font-semibold leading-[1.8]" style={{ color: 'var(--ink-mid)', fontStyle: 'italic' }}>
             {location.whyImportant}

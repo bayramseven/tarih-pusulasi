@@ -110,7 +110,7 @@ export default function MapCanvas({ tipALocations, cities, gpsPosition, onTipACl
         id: 'cities-label',
         type: 'symbol',
         source: 'cities',
-        minzoom: 6.5,
+        minzoom: 7,
         layout: {
           'text-field': ['get', 'name'],
           'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
@@ -169,8 +169,8 @@ export default function MapCanvas({ tipALocations, cities, gpsPosition, onTipACl
           'fill-opacity': [
             'case',
             ['boolean', ['feature-state', 'hover'], false],
-            0.42,
-            0.18,
+            0.45,
+            0.25,
           ],
         },
       })
