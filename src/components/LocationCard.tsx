@@ -33,7 +33,6 @@ export default function LocationCard({ location }: Props) {
   const civ = CIV[location.civilization] ?? { bg: '#1A100A', accent: '#C8960C' }
   const [imgLoaded, setImgLoaded] = useState(false)
   const [imgError, setImgError] = useState(false)
-  const hasImage = !!location.imageUrl && !imgError
 
   return (
     <motion.div
