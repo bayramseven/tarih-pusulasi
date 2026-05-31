@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --parchment: #F5EFD7;
+  --parchment-mid: #EDE4C0;
+  --parchment-dark: #E0D4A8;
+  --ink: #1C0F08;
+  --ink-mid: #3D2418;
+  --ink-light: #7A5C4A;
+  --gold: #C8960C;
+  --gold-light: #E8B84B;
+  --gold-pale: #F5E4A8;
+  --gold-dark: #9A7008;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  width: 100%; height: 100%;
+  overflow: hidden;
+  background: var(--parchment);
+  color: var(--ink);
+  font-family: 'Source Serif 4', Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4,h5,h6 { font-family: 'Playfair Display', Georgia, serif; }
+
+/* ── Grain texture on the whole page ── */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.028;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 128px;
+}
+
+/* ── Mapbox overrides ── */
+.mapboxgl-canvas { filter: sepia(40%) saturate(0.75) brightness(0.93) contrast(1.05); }
+.mapboxgl-ctrl-logo { opacity: 0.35; }
+.mapboxgl-ctrl-attrib {
+  background: rgba(245,239,215,0.88) !important;
+  font-size: 10px;
+  backdrop-filter: blur(6px);
+}
+.mapboxgl-ctrl-group {
+  background: rgba(245,239,215,0.92) !important;
+  border: 1px solid rgba(200,150,12,0.25) !important;
+  box-shadow: 0 2px 12px rgba(44,24,16,0.18) !important;
+  backdrop-filter: blur(10px);
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 2px; opacity: 0.5; }
+
+/* ── Image shimmer loading ── */
+@keyframes shimmer {
+  0%   { background-position: -600px 0; }
+  100% { background-position: 600px 0; }
+}
+.img-shimmer {
+  background: linear-gradient(90deg,
+    var(--parchment-mid) 0%,
+    var(--parchment) 40%,
+    var(--parchment-mid) 80%
+  );
+  background-size: 1200px 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+/* ── Tip A marker triple-ring pulse ── */
+@keyframes ring1 {
+  0%   { box-shadow: 0 0 0 0 rgba(200,150,12,0.7), 0 0 0 0 rgba(200,150,12,0.4), 0 0 0 0 rgba(200,150,12,0.15); }
+  100% { box-shadow: 0 0 0 8px rgba(200,150,12,0), 0 0 0 16px rgba(200,150,12,0), 0 0 0 28px rgba(200,150,12,0); }
+}
+.tipa-marker { animation: ring1 2.8s ease-out infinite; }
+
+/* ── Compass spin ── */
+@keyframes compassSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+.compass-spin { animation: compassSpin 20s linear infinite; }
+
+/* ── Ornament divider ── */
+.ornament-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--gold);
+  font-size: 13px;
+  opacity: 0.7;
+}
+.ornament-divider::before,
+.ornament-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to var(--dir, right), transparent, var(--gold), transparent);
+  opacity: 0.5;
+}
+
+/* ── Drag handle ── */
+.drag-handle {
+  width: 32px; height: 4px;
+  background: var(--parchment-dark);
+  border-radius: 2px;
+  margin: 0 auto 8px;
+}
+
+/* ── Pull-quote ── */
+.pull-quote {
+  position: relative;
+  padding: 20px 20px 20px 24px;
+  border-left: 3px solid var(--gold);
+  background: linear-gradient(135deg, rgba(200,150,12,0.06), transparent);
+  border-radius: 0 8px 8px 0;
+}
+.pull-quote::before {
+  content: '\201C';
+  position: absolute;
+  top: -8px;
+  left: 12px;
+  font-size: 64px;
+  line-height: 1;
+  color: var(--gold);
+  opacity: 0.25;
+  font-family: 'Playfair Display', serif;
+}

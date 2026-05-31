@@ -1,0 +1,33 @@
+{
+  "id": "gobeklitepe",
+  "name": "Göbekli Tepe",
+  "period": "MÖ 10000 – MÖ 8000",
+  "civilization": "Taş Devri Avcı-Toplayıcıları",
+  "coordinates": [38.9225, 37.2231],
+  "polygon": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [38.9100, 37.2320],
+        [38.9380, 37.2320],
+        [38.9380, 37.2130],
+        [38.9100, 37.2130],
+        [38.9100, 37.2320]
+      ]]
+    }
+  },
+  "summary": "12.000 yıl önce henüz tarım keşfedilmemişken, avcı-toplayıcılar bu tepeye 10–20 tonluk sütunlar dikti. Tüm tarih kitapları yeniden yazıldı.",
+  "mainText": "Göbekli Tepe, insanlık tarihinin bilinen en eski tapınak kompleksidir. Şanlıurfa'nın 15 kilometre kuzeydoğusunda yer alan bu alan, MÖ 10000 civarında, yani tarımın bile icat edilmediği bir dönemde inşa edilmiştir.\n\n1994'te Alman arkeolog Klaus Schmidt tarafından keşfedildiğinde, arkeoloji dünyası adeta sarsıldı. Çünkü mevcut teorilere göre bu ölçekte anıtsal yapılar ancak yerleşik tarım toplulukları tarafından yapılabilirdi. Göbekli Tepe bu varsayımı kökten çürüttü: organize din, tarımdan önce geliyordu.\n\n6–7 metre yüksekliğindeki T biçimli kireçtaşı sütunlar, tilki, yılan, akrep ve ördek gibi hayvan kabartmalarıyla süslüdür. Her bir sütun 10 ila 20 ton ağırlığındadır. Bu taşların 500 metre uzaktaki taş ocaklarından yalnızca insan gücüyle taşınmış olması, toplulukların ne denli sofistike bir örgütlenmeye sahip olduğunu göstermektedir.\n\nAlan 2018'de UNESCO Dünya Mirası listesine alınmıştır. Kazıların yalnızca yüzde beşi tamamlanmıştır; çoğu hâlâ toprak altındadır.",
+  "timeline": [
+    { "year": "MÖ 10000", "event": "İlk yapı katmanlarının (Tabaka III) inşası" },
+    { "year": "MÖ 9000", "event": "İkinci yapı katmanı (Tabaka II) ve daha küçük yapılar" },
+    { "year": "MÖ 8000", "event": "Alanın kasıtlı olarak toprakla örtülmesi" },
+    { "year": "1963", "event": "İlk arkeolojik araştırmalar — önemi anlaşılamamış" },
+    { "year": "1994", "event": "Klaus Schmidt'in sistematik kazı çalışmalarına başlaması" },
+    { "year": "2018", "event": "UNESCO Dünya Mirası listesine alınması" }
+  ],
+  "whyImportant": "Tanrı fikri, ekmeği değil; ekmek fikrini doğurdu — Göbekli Tepe bunu kanıtlıyor.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/G%C3%B6bekli_Tepe%2C_Urfa.jpg/1600px-G%C3%B6bekli_Tepe%2C_Urfa.jpg",
+  "readMoreUrl": "https://www.kulturportali.gov.tr/turkiye/sanliurfa/gezilecekyer/gobeklitepe"
+}

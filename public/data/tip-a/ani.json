@@ -1,0 +1,33 @@
+{
+  "id": "ani",
+  "name": "Ani Harabeleri",
+  "period": "MS 961 – MS 1064",
+  "civilization": "Ermeni Bagratuni Krallığı",
+  "coordinates": [43.5717, 40.5069],
+  "polygon": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [43.5480, 40.5200],
+        [43.5980, 40.5200],
+        [43.5980, 40.4900],
+        [43.5480, 40.4900],
+        [43.5480, 40.5200]
+      ]]
+    }
+  },
+  "summary": "Zamanında 100.000 kişilik nüfusuyla Constantinople ile rekabet eden başkent. Bugün Kars'ta, Türkiye-Ermenistan sınırında, rüzgarda tek başına duruyor.",
+  "mainText": "Ani, MS 961'den 1064'e kadar Ermeni Bagratuni Krallığı'nın başkenti olarak hüküm sürmüş, zamanının en önemli şehirlerinden biridir. Bugün Kars'a bağlı, Türkiye-Ermenistan sınırını oluşturan Arpaçay Vadisi'nin kenarında yer almaktadır.\n\nZirve döneminde yaklaşık 100.000 kişilik nüfusuyla Konstantinopolis ve Bağdat ile yarışan Ani, görkemli katedrallar, camiler, saraylar ve kervansaraylarıyla çok dinli ve çok kültürlü bir kozmopolit şehirdi. \"Bin ve Bir Kiliseli Şehir\" olarak anılırdı.\n\n1064'te Büyük Selçuklu Sultanı Alp Arslan tarafından fethedilen şehir, ardından Moğol saldırıları ve 1319 depremiyle büyük yıkıma uğramış; sonunda terk edilmiştir. Bugün ayakta duran katedralin yarısı çökmüş olmasına karşın duvarlarındaki taş işçiliği, döneminin mimarisine dair güçlü bir tanıklık sunmaktadır.\n\n2016'da UNESCO Dünya Mirası ilan edilen Ani, coğrafi ve siyasi konumuyla bugün hâlâ derin bir kırılganlık taşımaktadır.",
+  "timeline": [
+    { "year": "MS 961", "event": "Ani'nin Bagratuni Krallığı'nın başkenti ilan edilmesi" },
+    { "year": "MS 1001", "event": "Ani Katedrali'nin tamamlanması" },
+    { "year": "MS 1064", "event": "Alp Arslan'ın fethi" },
+    { "year": "MS 1239", "event": "Moğol istilası" },
+    { "year": "MS 1319", "event": "Büyük deprem ve şehrin terki" },
+    { "year": "2016", "event": "UNESCO Dünya Mirası listesine alınması" }
+  ],
+  "whyImportant": "Bir imparatorluğun unutulmuş başkenti, sınırın öte yanını izleyerek sende bekliyor.",
+  "imageUrl": "",
+  "readMoreUrl": "https://www.kulturportali.gov.tr/turkiye/kars/gezilecekyer/ani-harabeler"
+}

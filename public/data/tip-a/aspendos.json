@@ -1,0 +1,32 @@
+{
+  "id": "aspendos",
+  "name": "Aspendos",
+  "period": "MÖ 5. yy – MS 13. yy",
+  "civilization": "Antik Roma",
+  "coordinates": [31.1724, 36.9408],
+  "polygon": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [31.1520, 36.9520],
+        [31.1950, 36.9520],
+        [31.1950, 36.9280],
+        [31.1520, 36.9280],
+        [31.1520, 36.9520]
+      ]]
+    }
+  },
+  "summary": "Dünyanın en iyi korunmuş Roma tiyatrosu. MS 2. yüzyılda 15.000 seyirci kapasitesiyle inşa edildi, 1800 yıl sonra hâlâ opera sahnesi olarak kullanılıyor.",
+  "mainText": "Aspendos Tiyatrosu, Antalya'nın Serik ilçesinde yer alan ve günümüzde hâlâ kullanılabilen dünyanın en iyi korunmuş antik Roma tiyatrosudur.\n\nMS 2. yüzyılda İmparator Marcus Aurelius döneminde Zenon adlı yerel bir mimar tarafından inşa edilen tiyatro, 15.000 seyirci kapasitesine sahiptir. Roma tiyatro mimarisinin mükemmel örneği olan yapının sahne binası (scaenae frons) iki katlı ve 28 metre yüksekliğindedir.\n\nTiyatronun bu denli korunmuş olmasında Selçuklu döneminin katkısı büyüktür: yapı, 13. yüzyılda Selçuklu sarayı olarak kullanılmış; Atatürk'ün 1930'daki ziyaretinin ardından ise resmi olarak restore edilmiştir.\n\nHer yaz düzenlenen Aspendos Opera ve Bale Festivali, antik dünyayla bugünün sanatını aynı sahnede buluşturmaktadır. Seyirciler, Roma İmparatorluğu döneminde oturulan aynı mermer sıralara oturmaktadır.",
+  "timeline": [
+    { "year": "MÖ 5. yy", "event": "Aspendos şehrinin kurulması" },
+    { "year": "MS 161–180", "event": "Marcus Aurelius döneminde tiyatronun inşası" },
+    { "year": "MS 13. yy", "event": "Selçuklular tarafından saray olarak kullanılması" },
+    { "year": "1930", "event": "Atatürk'ün ziyareti ve restorasyon kararı" },
+    { "year": "1994", "event": "Aspendos Opera ve Bale Festivali'nin başlaması" }
+  ],
+  "whyImportant": "1800 yıllık bir tiyatroda bugün hâlâ perde açılıyor — dünyanın başka hiçbir yerinde bu yok.",
+  "imageUrl": "",
+  "readMoreUrl": "https://www.kulturportali.gov.tr/turkiye/antalya/gezilecekyer/aspendos-antik-kenti"
+}

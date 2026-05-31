@@ -1,0 +1,33 @@
+{
+  "id": "sultanahmet",
+  "name": "Sultanahmet Meydanı",
+  "period": "MS 203 – Günümüz",
+  "civilization": "Roma & Bizans & Osmanlı",
+  "coordinates": [28.9768, 41.0054],
+  "polygon": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [28.9680, 41.0120],
+        [28.9870, 41.0120],
+        [28.9870, 40.9980],
+        [28.9680, 40.9980],
+        [28.9680, 41.0120]
+      ]]
+    }
+  },
+  "summary": "Bizans Hipodromu'nun üzerine kurulu meydan. Burada Mısır'dan getirilen dikilitaş 3500 yıldır, Yılan Sütunu ise 2500 yıldır ayakta duruyor.",
+  "mainText": "Sultanahmet Meydanı, bugünkü görünümünün çok ötesinde, antik dünyanın en büyük at yarışı pistlerinden birinin üzerine inşa edilmiştir. MS 203'te başlatılan ve İmparator Konstantinopolis tarafından büyütülen Hipodrom, yaklaşık 100.000 seyirci kapasitesine sahipti.\n\nMeydanın ortasında yer alan dikilitaş, MÖ 1490'da Firavun III. Thutmosis tarafından Mısır'da dikilmiş; MS 390'da İmparator I. Theodosius tarafından İstanbul'a taşınmıştır. 3500 yıllık bu obelisk, dünyanın en eski ayakta duran anıtları arasındadır.\n\nYılan Sütunu, MÖ 479'da Perslere karşı kazanılan Plataia Zaferi'nin anısına Yunanistan'daki Delfi Tapınağı'ndan getirilmiştir. Bugün sütunun yalnızca gövdesi kalmıştır; ancak 2500 yıllık geçmişiyle hâlâ yerli yerinde durmaktadır.\n\nSultanahmet Camii ve Ayasofya'nın arasında yer alan bu alan, Roma, Bizans ve Osmanlı dönemlerinin kesişim noktasıdır.",
+  "timeline": [
+    { "year": "MS 203", "event": "Septimius Severus tarafından Hipodrom'un inşasına başlanması" },
+    { "year": "MS 330", "event": "Konstantinopolis'in kurulmasıyla Hipodrom'un genişletilmesi" },
+    { "year": "MS 390", "event": "Mısır dikilitaşının meydana yerleştirilmesi" },
+    { "year": "MS 532", "event": "Nika ayaklanması — 30.000 kişinin hayatını kaybettiği isyan" },
+    { "year": "MS 1453", "event": "Osmanlı fethinin ardından meydanın dönüşümü" },
+    { "year": "MS 1616", "event": "Sultanahmet Camii'nin tamamlanması" }
+  ],
+  "whyImportant": "Tek bir meydanda Mısır, Yunan, Roma, Bizans ve Osmanlı — 3500 yılın tamamı adım mesafesinde.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Sultanahmet_Square%2C_Obelisk_of_Theodosius%2C_Istanbul_%2852121868925%29.jpg/1600px-Sultanahmet_Square%2C_Obelisk_of_Theodosius%2C_Istanbul_%2852121868925%29.jpg",
+  "readMoreUrl": "https://www.kulturportali.gov.tr/turkiye/istanbul"
+}

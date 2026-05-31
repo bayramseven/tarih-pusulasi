@@ -1,0 +1,33 @@
+{
+  "id": "nemrut",
+  "name": "Nemrut Dağı",
+  "period": "MÖ 62 – MÖ 32",
+  "civilization": "Kommagene Krallığı",
+  "coordinates": [38.7412, 37.9811],
+  "polygon": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [38.7150, 38.0000],
+        [38.7700, 38.0000],
+        [38.7700, 37.9600],
+        [38.7150, 37.9600],
+        [38.7150, 38.0000]
+      ]]
+    }
+  },
+  "summary": "2150 metre yükseklikte, dev tanrı heykelleri arasında gün doğumu izlemek. Kral Antiokhos kendini tanrılarla eşit gördü ve bunu taşa kazıttı.",
+  "mainText": "Nemrut Dağı, Adıyaman iline bağlı ve deniz seviyesinden 2150 metre yüksekliğinde yer alan, MÖ 1. yüzyılda Kommagene Kralı I. Antiokhos tarafından yaptırılmış dev heykel kompleksine ev sahipliği yapar.\n\nKommagene, Fırat kıyısında kurulmuş küçük ama özgün bir krallıktı. Kral Antiokhos, kendisini hem Pers hem de Yunan tanrılarıyla özdeşleştirmiş; Zeus-Oromasdes, Apollon-Mithras, Herakles-Artagnes gibi senkretik tanrı figürleri yaratmıştır. Dağın zirvesine 8–9 metre yüksekliğinde bu tanrı heykellerini diktirmiş ve ölümünden sonra buraya gömülmeyi emretmiştir.\n\nAslan burcu kabartması, bilinen en eski yıldız haritalarından biri olarak değerlendirilmektedir. Gün doğumu ve gün batımında ziyaretçilerin altın ışıkla aydınlanan dev başları seyrettiği bu yer, UNESCO tarafından 1987'de Dünya Mirası ilan edilmiştir.\n\nKralın mezarı hâlâ bulunamamıştır; tümülüs olarak bilinen taş yığının altında olduğu düşünülmektedir.",
+  "timeline": [
+    { "year": "MÖ 163", "event": "Kommagene Krallığı'nın bağımsızlığını ilan etmesi" },
+    { "year": "MÖ 69", "event": "I. Antiokhos'un tahta çıkması" },
+    { "year": "MÖ 62", "event": "Nemrut Dağı tapınak-tümülüs kompleksinin inşası" },
+    { "year": "MÖ 32", "event": "I. Antiokhos'un ölümü" },
+    { "year": "72", "event": "Roma İmparatorluğu tarafından ilhak edilmesi" },
+    { "year": "1987", "event": "UNESCO Dünya Mirası listesine alınması" }
+  ],
+  "whyImportant": "Kendini tanrılara eşit gören bir kralın 2150 metrede inşa ettirdiği taş ego — ve hâlâ ayakta.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Mount_Nemrut_-_East_Terrace_%284961323529%29.jpg/1600px-Mount_Nemrut_-_East_Terrace_%284961323529%29.jpg",
+  "readMoreUrl": "https://www.kulturportali.gov.tr/turkiye/adiyaman/gezilecekyer/nemrut-dagi"
+}

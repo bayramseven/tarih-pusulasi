@@ -1,0 +1,33 @@
+{
+  "id": "troya",
+  "name": "Troya",
+  "period": "MÖ 3000 – MÖ 85",
+  "civilization": "Tunç Çağı & Helenistik",
+  "coordinates": [26.2388, 39.9573],
+  "polygon": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+        [26.2200, 39.9700],
+        [26.2600, 39.9700],
+        [26.2600, 39.9430],
+        [26.2200, 39.9430],
+        [26.2200, 39.9700]
+      ]]
+    }
+  },
+  "summary": "Homeros'un İlyada destanına konu olan efsanevi şehir, Truva Savaşı'nın alanı. Heinrich Schliemann'ın 1871'deki kazıları mitosu gerçeğe dönüştürdü.",
+  "mainText": "Troya, Çanakkale iline bağlı Hisarlık Tepesi üzerinde yer alan ve insanlık tarihinin en ünlü antik şehirlerinden biridir. Efsaneye göre Truva Prensesi Helena'nın Spartalı kral Menelaos'tan kaçırılmasıyla başlayan savaş, Homeros'un İlyada destanında ölümsüzleştirilmiştir.\n\nAlman arkeolog Heinrich Schliemann 1871'de Hisarlık Tepesi'nde kazı başlatarak dünyanın şüpheyle baktığı bir efsaneyi gerçeğe dönüştürdü. Ancak katmanları karıştırarak pek çok tarihi bulguya zarar verdi. Bugün 9 farklı Troya katmanı tespit edilmiştir; MÖ 1200-1180 yıllarına denk gelen Troya VII, Homeros'un anlattığı dönemle örtüşmektedir.\n\nTroya Savaşı'nın sembolü olan tahta at replikası, alan girişinde ziyaretçileri karşılamaktadır. Surlar, tapınaklar ve agora kalıntıları 3000 yıllık tarihin katmanlarını gözler önüne serer.\n\n1998'de UNESCO Dünya Mirası ilan edilen Troya, 2018 yılında \"Troya Yılı\" kapsamında geniş çaplı bir restorasyon sürecine girmiştir.",
+  "timeline": [
+    { "year": "MÖ 3000", "event": "İlk yerleşim katmanının (Troya I) başlangıcı" },
+    { "year": "MÖ 1200", "event": "Troya VII — efsanevi Truva Savaşı dönemi" },
+    { "year": "MÖ 1180", "event": "Şehrin yakılıp yıkılması" },
+    { "year": "MÖ 700", "event": "Homeros'un İlyada destanını yazması" },
+    { "year": "1871", "event": "Heinrich Schliemann'ın kazı çalışmalarına başlaması" },
+    { "year": "1998", "event": "UNESCO Dünya Mirası listesine alınması" }
+  ],
+  "whyImportant": "3000 yıldır anlatılan bir efsane burada gerçek oldu — mitin toprağa gömüldüğü yer.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Walls_of_Troy_%282%29.jpg/1600px-Walls_of_Troy_%282%29.jpg",
+  "readMoreUrl": "https://www.kulturportali.gov.tr/turkiye/canakkale/gezilecekyer/troya-antik-kenti"
+}
